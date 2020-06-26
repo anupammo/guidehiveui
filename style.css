@@ -1,0 +1,69 @@
+#header-bg {
+    background-image: url('https://images.pexels.com/photos/1181233/pexels-photo-1181233.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #17a2b8;
+}
+.bg-mask {
+    background-color: #17a2b8dd;
+}
+/* .form-check label.form-check-label.card-title {
+    padding-top: 30%;
+    padding-bottom: 30%;
+} */
+label.form-check-label strong {
+    border: #fff solid 2px;
+    padding: 5px 25px;
+    background-color: #00000080;
+}
+#category-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card.text-white.border div {
+    position: absolute;
+    cursor: pointer;
+}
+.form-check p {
+    width: fit-content;
+    margin: 26% auto;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #00000080;
+    border: solid #fff 2px;
+    padding: 5px 10px;
+}
+.card div.card-img-overlay {
+    transition: 0.5s;
+}
+.card:hover div.card-img-overlay {
+    background-color: #17a2b880;
+}
+body.footer-nav {
+    margin-bottom: 65px;
+}
+footer.fixed-bottom {
+    border-top: #fff solid 10px;
+}
+.footer-nav-item:hover {
+    transition: .5s;
+}
+.footer-nav-item:hover {
+    color: #ffc107;
+}
+#profile-pic {
+    height: 180px;
+    margin-top: -90px;
+    border: #fff solid 5px;
+    box-shadow: #555555 0px 0px 10px;
+}
+#profile-pic-circle {
+    border-radius: 50%;
+    height: 200px;
+    margin-top: -100px;
+    border: #fff solid 5px;
+    box-shadow: #555555 0px 0px 10px;
+}

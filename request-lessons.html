@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Welcome to GuideHive</title>
+</head>
+
+<body class="footer-nav">
+    <header id="header-bg">
+        <div class="bg-mask py-5">
+            <h1 class="text-center text-white py-5">
+                <strong>GuideHive</strong> <br>
+                <strong class="text-warning">Request a new lesson</strong>
+            </h1>
+            <p class="h4 text-center text-white w-60 mx-auto pb-5">
+                <strong>Just set the topic, category,<br /> pick a convenient time and then tap "done"!</strong>
+            </p>
+        </div>
+    </header>
+    <section class="my-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12"></div>
+                <div class="col-md-6 col-12">
+                    <form class="my-4 p-5 py-3 border boredr-muted">
+                        <div class="form-group">
+                            <label for="InputEmail1">Select a start time for this lesson (all lessons can last up to 40
+                                minutes) :</label>
+                            <input type="text"
+                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                id="" placeholder="Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="text"
+                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                id="" placeholder="Time">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputName">What is this lesson going to be called?</label>
+                            <input type="text"
+                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                id="InputName" placeholder="Type a title here...">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword1">Pick a lesson category:</label>
+                            <select
+                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                id="exampleFormControlSelect1">
+                                <option selected disabled>Category</option>
+                                <option>Cooking</option>
+                                <option>Drawing</option>
+                                <option>Coding</option>
+                                <option>Origami</option>
+                                <option>Painting</option>
+                                <option>Writing</option>
+                                <option>Music</option>
+                                <option>Birds Spotting</option>
+                            </select>
+                        </div>
+                        <a href="dashboard.html" class="btn btn-outline-warning rounded-0 px-5">Cancel</a>
+                        <a href="request-lesson-success.html" class="btn btn-outline-info rounded-0 px-5">Done</a>
+                    </form>
+                </div>
+                <div class="col-md-3 col-12"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="fixed-bottom bg-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 bg-warning">
+                    <a href="dashboard.html" class="card-text">
+                        <div class="text-center p-3 text-white footer-nav-item">
+                            <svg class="bi bi-grid-fill" width="2em" height="2em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="guide-page.html" class="card-text">
+                        <div class="text-center p-3 text-white footer-nav-item">
+                            <svg class="bi bi-info-circle-fill" width="2em" height="2em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="my-lessons.html" class="card-text">
+                        <div class="text-center p-3 text-white footer-nav-item">
+                            <svg class="bi bi-card-list" width="2em" height="2em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path fill-rule="evenodd"
+                                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z" />
+                                <circle cx="3.5" cy="5.5" r=".5" />
+                                <circle cx="3.5" cy="8" r=".5" />
+                                <circle cx="3.5" cy="10.5" r=".5" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="my-profile.html" class="card-text">
+                        <div class="text-center p-3 text-white footer-nav-item">
+                            <svg class="bi bi-person-circle" width="2em" height="2em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="text-center my-4">
+                        Please tap confirm to join to this lesson. Then you will see it in your "My Lessons" tab.
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-dark"
+                            data-dismiss="modal">Cancel</button>
+                        <a href="join-lesson-success.html" class="btn btn-warning">Done</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
