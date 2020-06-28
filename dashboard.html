@@ -297,13 +297,24 @@
                         Please tap confirm to join this lesson. <br>Then you will see it in your "My Lessons" tab.
                     </p>
                     <p class="text-center pb-3">
-                        <a href="other-profile.html" class="card-link">View Profile</a>
+                        <a href="other-profile.html" class="btn btn-outline-warning rounded-0 px-5">👶 View Profile</a>
                     </p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-dark"
-                            data-dismiss="modal">Cancel</button>
-                        <a href="join-lesson-success.html" class="btn btn-warning">Confirm</a>
-                    </div>
+                    <form action="" class="mx-4">
+                        <div class="form-group">
+                            <label for="InputName" class="d-block text-center">
+                                <strong>Add prerequisites and / or disclaimers: <span><a href="#" target="_blank">check here</a></span></strong>
+                            </label>
+                        </div>
+                        <div class="form-group pl-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label text-justify" for="exampleCheck1">I have read and accept the above prerequisites and disclaimers.</label>
+                        </div>
+                        <div class="text-center mb-4">
+                            <button type="button" class="btn btn-dark"
+                                data-dismiss="modal">Cancel</button>
+                            <a href="join-lesson-success.html" class="btn btn-warning">Confirm</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

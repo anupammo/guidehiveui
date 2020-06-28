@@ -70,20 +70,31 @@
                             </select>
                         </div>
                         <div class="form-group">
+                            <label for="InputPassword1">Select lesson frequency:</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Single lesson</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <!-- <label class="form-check-label" for="inlineRadio2"></label> -->
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <select class="form-control rounded-0 border-warning bg-white border-0 shadow-none"
+                                    id="exampleFormControlSelect1">
+                                    <option selected disabled>Recurring lesson</option>
+                                    <option>Daily</option>
+                                    <option>Weekly</option>
+                                    <option>Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="InputPassword1">Pick a payment setting:</label>
-                            <!-- <select
-                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
-                                id="exampleFormControlSelect1">
-                                <option selected disabled>Category</option>
-                                <option>Cooking</option>
-                                <option>Drawing</option>
-                                <option>Coding</option>
-                                <option>Origami</option>
-                                <option>Painting</option>
-                                <option>Writing</option>
-                                <option>Music</option>
-                                <option>Birds Spotting</option>
-                            </select> -->
                         </div>
                         <div class="form-group">
                             <div class="form-check form-check-inline">
@@ -97,8 +108,7 @@
                                 <label class="form-check-label" for="inlineRadio2">Donation-based</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <select
-                                    class="form-control rounded-0 border-warning bg-white border-0 shadow-none"
+                                <select class="form-control rounded-0 border-warning bg-white border-0 shadow-none"
                                     id="exampleFormControlSelect1">
                                     <option selected disabled>Tokens</option>
                                     <option>1 Tokens</option>
