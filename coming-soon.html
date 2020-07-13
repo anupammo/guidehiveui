@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-bg {
+            background-size: cover;
+        }
+
+        #card-cake-bg {
+            background-image: url('https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-guiter-bg {
+            background-image: url('https://images.pexels.com/photos/144428/pexels-photo-144428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-flute-bg {
+            background-image: url('https://images.pexels.com/photos/2167358/pexels-photo-2167358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-yoga-bg {
+            background-image: url('https://images.pexels.com/photos/588561/pexels-photo-588561.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-beethoven-bg {
+            background-image: url('https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-javascript-bg {
+            background-image: url('https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        #card-mindful-bg {
+            background-image: url('https://images.pexels.com/photos/359564/pexels-photo-359564.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300');
+        }
+
+        .card-link+.card-link {
+            margin-left: 0px;
+        }
+
+        .main {
+            display: flex;
+            overflow: hidden;
+            height: 70vh;
+        }
+
+        .main div.col a div.card{
+            max-width: 100%;
+            vertical-align: middle;
+            border: 2px solid white;
+            box-sizing: border-box;
+            transition: opacity .2s;
+        }
+
+        .main:hover img {
+            opacity: 0.5;
+        }
+
+        .main img:hover {
+            opacity: 1;
+        }
+
+        .main .col {
+            animation: var(--animation, none) 16s infinite linear;
+        }
+
+        .main .col:hover {
+            animation-play-state: paused;
+        }
+
+        .main .col:nth-of-type(odd) {
+            align-self: flex-end;
+            --direction: 50%;
+        }
+
+        @keyframes slide {
+            to {
+                -webkit-transform: translateY(var(--direction, -50%));
+                transform: translateY(var(--direction, -50%));
+            }
+        }
+
+        /* .col a div.card {
+            min-width: 280px;
+            margin: 10px;
+        } */
+    </style>
+
+    <title>Welcome to GuideHive</title>
+</head>
+
+<body class="footer-nav">
+    <header id="header-bg">
+        <div class="bg-mask py-5">
+            <h1 class="text-center text-white py-5">
+                <strong>GuideHive</strong> <br>
+                <small class="h3 text-warning">Coming soon to serve you ...</small>
+            </h1>
+        </div>
+    </header>
+    <section class="my-5 pb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-12 mb-5">
+                    <div class="main">
+                        <div class="col">
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-cake-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">11:30 AM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Make the <br>Cake</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Rachel</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-guiter-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">04:30 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Start playing <br>Guitar</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Robert</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-flute-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">02:45 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Flute for <br>Expert</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Ian</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-javascript-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">09:30 AM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Start with <br>JavaScript</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Neo</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-beethoven-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">04:30 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>All about <br>Beethoven</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Thomas</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-mindful-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">07:30 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>How to run <br>Mindfully</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Sarah</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-none d-lg-block">
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-cake-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">11:30 AM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Make the <br>Cake</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Rachel</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-flute-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">02:45 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Flute for <br>Expert</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Ian</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#staticBackdrop" class="card-link" data-toggle="modal">
+                                <div class="card my-3 card-bg" id="card-guiter-bg">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-white text-center">04:30 PM</h6>
+                                        <h5 class="card-title text-center text-white my-4">
+                                            <strong>Start playing <br>Guitar</strong>
+                                        </h5>
+                                        <p class="card-text text-center text-white">Guided by Robert</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-5">
+                    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item w-50" role="presentation">
+                            <a class="nav-link btn btn-outline-info btn-lg px-5 rounded-0 shadow-none active" id="-tab"
+                                data-toggle="tab" href="#login" role="tab" aria-controls="login"
+                                aria-selected="true">Log In</a>
+                        </li>
+                        <li class="nav-item w-50" role="presentation">
+                            <a class="nav-link btn btn-outline-warning btn-lg px-5 rounded-0 shadow-none"
+                                id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup"
+                                aria-selected="false">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form class="my-2 px-3 py-3">
+                                <div class="form-group">
+                                    <input type="email"
+                                        class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                        id="InputEmail1" aria-describedby="emailHelp" placeholder="📧 Email">
+                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                </div>
+                                <div class="form-group">
+                                    <input type="password"
+                                        class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                        id="InputPassword1" placeholder="🔒 Password">
+                                </div>
+                                <div class="form-group form-check float-right">
+                                    <input type="checkbox" class="form-check-input" id="Check1">
+                                    <label class="form-check-label text-muted" for="Check1">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-outline-info rounded-0 btn-block mb-3">
+                                    <span class="h6">Log In</span>
+                                </button>
+                                <p class="text-center">
+                                    <span class="bg-white text-muted px-2 py-2 rounded-circle">or</span>
+                                </p>
+                                <hr class="mb-3" style="margin-top: -28px;">
+
+                                <button type="button" class="btn btn-outline-primary rounded-0 btn-block mt-4">
+                                    <span class="h6">facebook</span>
+                                </button>
+                                <button type="button" class="btn btn-outline-light rounded-0 btn-block shadow-sm">
+                                    <span class="h6 text-dark">Google</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <form class="my-2 px-3 py-3">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text"
+                                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                                placeholder="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text"
+                                                class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                                placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email"
+                                        class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                        id="InputEmail1" aria-describedby="emailHelp" placeholder="📧 Email">
+                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                </div>
+                                <div class="form-group">
+                                    <input type="password"
+                                        class="form-control rounded-0 border-warning bg-white border-left-0 border-top-0 border-right-0 shadow-none"
+                                        id="InputPassword1" placeholder="🔒 Password">
+                                </div>
+                                <button type="submit" class="btn btn-outline-info rounded-0 btn-block mb-3">
+                                    <span class="h5">
+                                        <strong>Log in!</strong>
+                                    </span>
+                                </button>
+                                <p class="text-center">
+                                    <span class="bg-white text-muted px-2 py-2 rounded-circle">or</span>
+                                </p>
+                                <hr class="mb-3" style="margin-top: -28px;">
+                                <button type="button" class="btn btn-outline-primary rounded-0 btn-block mt-4">
+                                    <span class="h6">facebook</span>
+                                </button>
+                                <button type="button" class="btn btn-outline-light rounded-0 btn-block shadow-sm">
+                                    <span class="h6 text-dark">Google</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="fixed-bottom bg-info mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-white mt-3">All Rights Reserved © GuideHive 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        [...document.querySelectorAll('.col')].map(column => {
+            column.style.setProperty('--animation', 'slide');
+            column.style.setProperty('height', '200%');
+            column.innerHTML = column.innerHTML + column.innerHTML;
+        });
+    </script>
+</body>
+
+</html>
